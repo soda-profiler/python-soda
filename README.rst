@@ -7,8 +7,8 @@ soda_client
    :target: https://www.python.org/downloads/release/python-360
 .. |codefactor grade| image:: https://www.codefactor.io/repository/github/soda-profiler/python-soda/badge
    :target: https://www.codefactor.io/repository/github/soda-profiler/python-soda
-.. |travis-badge| image:: https://travis-ci.org/mgurdal/soda_client.svg?branch=master
-   :target: https://travis-ci.org/mgurdal/soda_client
+.. |travis-badge| image:: https://travis-ci.org/soda-profiler/python-soda.svg?branch=master
+    :target: https://travis-ci.org/soda-profiler/python-soda
 .. |coveralls| image:: https://coveralls.io/repos/github/soda-profiler/python-soda/badge.svg?branch=master
    :target: https://coveralls.io/github/soda-profiler/python-soda?branch=master
 
