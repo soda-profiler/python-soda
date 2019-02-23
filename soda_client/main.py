@@ -10,11 +10,13 @@ import aiohttp
 
 
 class Soda:
-    def __init__(self, host=None, token=None, project_name=None,
-                 max_workers=4, max_connectors=20):
+    def __init__(self, host=None, token=None, threshold=None,
+                 project_name=None, max_workers=4, max_connectors=20,
+                 session_factory = aiohttp.ClientSession
+                 ):
         connector = aiohttp.TCPConnector(limit=max_connectors)
         self.loop = asyncio.get_event_loop()
-        self.client_session = aiohttp.ClientSession(
+        self.client_session = session_factory(
             loop=self.loop,
             connector=connector,
             headers={
@@ -24,9 +26,11 @@ class Soda:
         self.executor = ThreadPoolExecutor(max_workers=max_workers)
         self.stack = defaultdict(dict)
         self.server_url = host
+        self.threshold = threshold
 
     async def report(self, data):
-        if (data['end'] - data['start']) > self.threshold:
+        threshold = self.threshold
+        if (data['end'] - data['start']) > threshold:
             await self.client_session.post(self.server_url, json=data)
         else:
             pass
