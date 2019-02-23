@@ -1,5 +1,4 @@
 from asynctest import CoroutineMock
-
 from soda_client.soda_client.main import Soda
 
 
