@@ -1,5 +1,4 @@
 import requests
-
 from soda_client import Soda
 
 response = requests.post("http://0.0.0.0/api/v1.0/auth/", json={
