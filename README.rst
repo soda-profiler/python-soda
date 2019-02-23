@@ -10,7 +10,7 @@ soda_client
 .. |travis-badge| image:: https://travis-ci.org/mgurdal/soda_client.svg?branch=master
    :target: https://travis-ci.org/mgurdal/soda_client
 .. |coveralls| image:: https://coveralls.io/repos/github/soda-profiler/python-soda/badge.svg?branch=master
-:target: https://coveralls.io/github/soda-profiler/python-soda?branch=master
+   :target: https://coveralls.io/github/soda-profiler/python-soda?branch=master
 
 
 Installation
