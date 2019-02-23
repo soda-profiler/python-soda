@@ -1,5 +1,5 @@
 from asynctest import CoroutineMock
-from soda_client.soda_client.main import Soda
+from soda_client.main import Soda
 
 
 async def test_does_not_report_if_threshold():
