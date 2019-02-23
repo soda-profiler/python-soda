@@ -1,7 +1,7 @@
-aiohttp\_auth
+soda_client
 =============
 
-|Python 3.6| |travis-badge| |codefactor grade|
+|Python 3.6| |travis-badge| |codefactor grade| |coveralls|
 
 .. |Python 3.6| image:: https://img.shields.io/badge/python-3.6-brightgreen.svg
    :target: https://www.python.org/downloads/release/python-360
@@ -9,6 +9,9 @@ aiohttp\_auth
    :target: https://www.codefactor.io/repository/github/mgurdal/soda_client/badge
 .. |travis-badge| image:: https://travis-ci.org/mgurdal/soda_client.svg?branch=master
    :target: https://travis-ci.org/mgurdal/soda_client
+.. |coveralls| image:: https://coveralls.io/repos/github/soda-profiler/python-soda/badge.svg?branch=master
+:target: https://coveralls.io/github/soda-profiler/python-soda?branch=master
+
 
 Installation
 ~~~~~~~~~~~~
