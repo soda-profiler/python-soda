@@ -5,8 +5,8 @@ soda_client
 
 .. |Python 3.6| image:: https://img.shields.io/badge/python-3.6-brightgreen.svg
    :target: https://www.python.org/downloads/release/python-360
-.. |codefactor grade| image:: https://www.codefactor.io/repository/github/mgurdal/soda_client/badge
-   :target: https://www.codefactor.io/repository/github/mgurdal/soda_client/badge
+.. |codefactor grade| image:: https://www.codefactor.io/repository/github/soda-profiler/python-soda/badge
+   :target: https://www.codefactor.io/repository/github/soda-profiler/python-soda
 .. |travis-badge| image:: https://travis-ci.org/mgurdal/soda_client.svg?branch=master
    :target: https://travis-ci.org/mgurdal/soda_client
 .. |coveralls| image:: https://coveralls.io/repos/github/soda-profiler/python-soda/badge.svg?branch=master
