@@ -12,7 +12,7 @@ import aiohttp
 class Soda:
     def __init__(self, host=None, token=None, threshold=None,
                  project_name=None, max_workers=4, max_connectors=20,
-                 session_factory = aiohttp.ClientSession
+                 session_factory=aiohttp.ClientSession
                  ):
         connector = aiohttp.TCPConnector(limit=max_connectors)
         self.loop = asyncio.get_event_loop()
@@ -29,8 +29,8 @@ class Soda:
         self.threshold = threshold
 
     async def report(self, data):
-        threshold = self.threshold
-        if (data['end'] - data['start']) > threshold:
+        time_elapsed = data['end'] - data['start']
+        if time_elapsed > self.threshold:
             await self.client_session.post(self.server_url, json=data)
         else:
             pass
